@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-class TraceTranslator {
+class SpanTranslator {
 
   // TODO(nilebox): Extract the constant
   private static final String OPEN_TELEMETRY_LIBRARY_VERSION = "0.3.0";
@@ -249,5 +249,5 @@ class TraceTranslator {
     return AttributeValue.newBuilder().setStringValue(toTruncatableStringProto(value)).build();
   }
 
-  private TraceTranslator() {}
+  private SpanTranslator() {}
 }

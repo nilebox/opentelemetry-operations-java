@@ -14,11 +14,13 @@ subprojects {
     }
 
     ext {
-        googleCloudVersion = '1.0.2'
+        googleCloudMonitoringVersion = '1.100.1'
+        googleCloudTraceVersion = '1.0.3'
         openTelemetryVersion = '0.3.0'
 
         libraries = [
-                google_cloud_trace: "com.google.cloud:google-cloud-trace:${googleCloudVersion}",
+                google_cloud_monitoring: "com.google.cloud:google-cloud-monitoring:${googleCloudMonitoringVersion}",
+                google_cloud_trace: "com.google.cloud:google-cloud-trace:${googleCloudTraceVersion}",
                 opentelemetry_api:"io.opentelemetry:opentelemetry-api:${openTelemetryVersion}",
                 opentelemetry_sdk:"io.opentelemetry:opentelemetry-sdk:${openTelemetryVersion}",
         ]
