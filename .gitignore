@@ -1,5 +1,5 @@
 # Gradle
-/.gradle/
+.gradle/
 /out/
 .project
 .settings
@@ -11,6 +11,8 @@
 /.vscode/
 
 # Build artifacts
+build/
+bin/
 /exporters/trace/build/
 /exporters/trace/bin/
 
